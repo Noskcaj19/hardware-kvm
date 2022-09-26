@@ -1,0 +1,12 @@
+[package]
+name = "synergy_parser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.57"
+byteorder_async = { version = "1.2.0", features = ["tokio_async"] }
+serialport = "4.2.0"
+thiserror = "1.0.37"
+tokio = { version = "1.21.2", features = ["net", "macros", "rt", "rt-multi-thread", "io-util"] }
+tracing = "0.1.36"
